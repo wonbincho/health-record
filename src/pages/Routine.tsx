@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Routine.scss';
+import Footer from '@src/components/footer';
 
 const cx = classNames.bind(styles);
 
@@ -19,37 +20,35 @@ const Routine: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('list')}>
             <p className={cx('title')}>상체</p>
             <div className={cx('routine_set')}>
-              <p className={cx('item')}>가슴</p>
-              <p className={cx('item')}>어깨</p>
-              <p className={cx('item')}>등</p>
-              <p className={cx('item')}>팔</p>
-              <p className={cx('item')}>유산소</p>
+              <span className={cx('item')}>가슴</span>
+              <span className={cx('item')}>어깨</span>
+              <span className={cx('item')}>등</span>
+              <span className={cx('item')}>팔</span>
+              <span className={cx('item')}>유산소</span>
+              <span className={cx('item')}>전신</span>
             </div>
             <div className={cx('update')}>
-              <a href="#" className={cx('edit')}>수정</a>
-              <a href="#" className={cx('delete')}>삭제</a>
+              <a href="#" className={cx('text')}>수</a>
+              <a href="#" className={cx('text')}>삭</a>
+              <a href="#" className={cx('text')}>루틴시작하기</a>
             </div>
           </li>
           <li className={cx('list')}>
             <p className={cx('title')}>하체</p>
             <div className={cx('routine_set')}>
-              <p className={cx('item')}>허벅지</p>
-              <p className={cx('item')}>엉덩이</p>
-              <p className={cx('item')}>유산소</p>
+              <span className={cx('item')}>하체</span>
+              <span className={cx('item')}>엉덩이</span>
+              <span className={cx('item')}>유산소</span>
             </div>
             <div className={cx('update')}>
-              <a href="#" className={cx('edit')}>수정</a>
-              <a href="#" className={cx('delete')}>삭제</a>
+              <a href="#" className={cx('text')}>수</a>
+              <a href="#" className={cx('text')}>삭</a>
+              <a href="#" className={cx('text')}>루틴시작하기</a>
             </div>
           </li>
         </ul>
       </div>
-      <div className={cx('footer')}>
-        <button>홈</button>
-        <button>운동</button>
-        <button>루틴</button>
-        <button>설정</button>
-      </div>
+      <Footer />
     </div>
   );
 };

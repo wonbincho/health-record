@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.scss';
+import Footer from '@src/components/footer';
 
 const cx = classNames.bind(styles);
 
@@ -38,12 +39,7 @@ const Home: React.FC<IOwnProps> = ({ }) => {
           </li>
         </ul>
       </div>
-      <div className={cx('footer')}>
-        <button>홈</button>
-        <button>운동</button>
-        <button>루틴</button>
-        <button>설정</button>
-      </div>
+      <Footer />
     </div>
   );
 };
