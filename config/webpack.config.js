@@ -13,15 +13,15 @@ const MODE = {
   PROD: 'production',
 };
 
-module.exports = function(env, argv) {
-  const { mode  } = argv;
+module.exports = function (env, argv) {
+  const { mode } = argv;
 
   switch (mode) {
     case MODE.DEV:
-    return webpackMerge(webpackCommonConfig, webpackDevConfig);
+      return webpackMerge(webpackCommonConfig, webpackDevConfig);
 
     case MODE.ALPHA:
-	  return webpackMerge(webpackCommonConfig, webpackAlphaConfig);
+      return webpackMerge(webpackCommonConfig, webpackAlphaConfig);
 
     case MODE.PROD:
       return webpackMerge(webpackCommonConfig, webpackProdConfig);
