@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Routine.scss';
-import Footer from '@src/components/footer';
+import Footer from '@src/components/Tab';
 
 const cx = classNames.bind(styles);
 
