@@ -27,12 +27,24 @@ const Home: React.FC<IOwnProps> = ({ }) => {
                 <img></img>
               </div>
               <div className={cx('routine_area')}>
-                <span className={cx('title')}>화요일-상체</span>
-                <span className={cx('exercise_time')}>1시간 10분(06:56 ~ 08:06)</span>
+                <div className={cx('title_area')}>
+                  <span className={cx('title')}>화요일-상체1</span>
+                  <div className={cx('exercise_time')}>
+                    <span>1시간 10분</span>
+                    <span className={cx('time')}>(06:56 ~ 08:06)</span>
+                  </div>
+                </div>
                 <div className={cx('routine_set')}>
-                  <span className={cx('item')}>하체</span>
-                  <span className={cx('item')}>엉덩이</span>
-                  <span className={cx('item')}>유산소</span>
+                  <span className={cx('item')}>등</span>
+                  <span className={cx('item')}>가슴</span>
+                  <span className={cx('item')}>팔</span>
+                </div>
+              </div>
+              <div className={cx('view_more')}>
+                <a className={cx('detail')} href={'#'}>상세 보기</a>
+                <div className={cx('comment')}>
+                  <button className={cx('comment_btn')}>댓</button>
+                  <button></button>
                 </div>
               </div>
             </div>
