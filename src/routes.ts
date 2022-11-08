@@ -15,6 +15,12 @@ export const ROUTE_PATH: {
     name: 'routine',
     title: '루틴',
   },
+  HEALTH: {
+    path: '/health',
+    url: '/',
+    name: 'health',
+    title: '운동',
+  },
 };
 
 export const routes = [
@@ -27,5 +33,10 @@ export const routes = [
     ...ROUTE_PATH.ROUTINE,
     exact: true,
     component: lazy(() => import('@src/pages/Routine')),
+  },
+  {
+    ...ROUTE_PATH.HEALTH,
+    exact: true,
+    component: lazy(() => import('@src/pages/Health')),
   },
 ];
